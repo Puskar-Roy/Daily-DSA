@@ -20,14 +20,24 @@ public class array {
                 System.out.println(arr[i]);
             }
         }
-        
-      
+    }
+
+
+    public static void reverseArray(int[] arr) {
+        try (Scanner scanner = new Scanner(System.in)) {
+            int n = arr.length;
+            for (int i = n - 1; i >= 0; i--) {
+                System.out.println(arr[i]);
+            }
+        }
     }
 
     public static void main(String[] args) {
         int arr[] = new int[5];
         inputArray(arr);
-        printArray(arr);
-
+        reverseArray(arr);
     }
+
+
+    
 }
